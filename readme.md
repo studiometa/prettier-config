@@ -4,20 +4,14 @@
 [![Dependency Status](https://img.shields.io/david/studiometa/prettier-config.svg?label=deps&style=flat-square)](https://david-dm.org/studiometa/prettier-config)
 [![devDependency Status](https://img.shields.io/david/dev/studiometa/prettier-config.svg?label=devDeps&style=flat-square)](https://david-dm.org/studiometa/prettier-config?type=dev)
 
-> A simple and single Prettier configuration to be used across projects.
+> Studio Meta's favorite Prettier configuration to be used across projects.
 
 ## Installation
 
-Install the package with Yarn:
+Install the package with NPM:
 
 ```bash
-$ yarn add --dev @studiometa/prettier-config
-```
-
-Or with NPM:
-
-```bash
-$ npm install --save-dev @studiometa/prettier-config
+$ npm install --save-dev prettier @studiometa/prettier-config
 ```
 
 ## Usage
