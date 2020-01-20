@@ -5,12 +5,12 @@
   "main": "src/prettier.config.js",
   "dependencies": {},
   "peerDependencies": {
-    "prettier": ">=1.18.2"
+    "prettier": ">=1.19.1"
   },
   "devDependencies": {
     "@studiometa/eslint-config": "^1.1.4",
-    "eslint": "^6.4.0",
-    "prettier": "^1.18.2"
+    "eslint": "^6.8.0",
+    "prettier": "^1.19.1"
   },
   "scripts": {
     "test": "eslint src/",
