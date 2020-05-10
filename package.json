@@ -1,16 +1,16 @@
 {
   "name": "@studiometa/prettier-config",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Simple Prettier configuration",
   "main": "src/prettier.config.js",
   "dependencies": {},
   "peerDependencies": {
-    "prettier": ">=1.19.1"
+    "prettier": ">=2.0.5"
   },
   "devDependencies": {
-    "@studiometa/eslint-config": "^1.1.4",
-    "eslint": "^6.8.0",
-    "prettier": "^1.19.1"
+    "@studiometa/eslint-config": "^2.1.0",
+    "eslint": "^7.0.0",
+    "prettier": "^2.0.5"
   },
   "scripts": {
     "test": "eslint src/",
