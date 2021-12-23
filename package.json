@@ -3,7 +3,9 @@
   "version": "2.0.1",
   "description": "Simple Prettier configuration",
   "main": "src/prettier.config.js",
-  "dependencies": {},
+  "dependencies": {
+    "prettier-plugin-twig-melody": "^0.4.6"
+  },
   "peerDependencies": {
     "prettier": ">=2.0.5"
   },

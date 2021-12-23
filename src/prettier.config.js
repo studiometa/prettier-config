@@ -7,4 +7,7 @@ module.exports = {
   trailingComma: 'es5',
   useTabs: false,
   vueIndentScriptAndStyle: true,
+  htmlWhitespaceSensitivity: 'ignore',
+  twigPrintWidth: 100,
+  twigMultiTags: ['html_element,end_html_element', 'with,endwith'],
 };
