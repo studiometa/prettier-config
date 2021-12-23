@@ -1,16 +1,18 @@
 {
   "name": "@studiometa/prettier-config",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Simple Prettier configuration",
   "main": "src/prettier.config.js",
-  "dependencies": {},
+  "dependencies": {
+    "prettier-plugin-twig-melody": "^0.4.6"
+  },
   "peerDependencies": {
     "prettier": ">=2.0.5"
   },
   "devDependencies": {
-    "@studiometa/eslint-config": "^2.1.0",
-    "eslint": "^7.0.0",
-    "prettier": "^2.0.5"
+    "@studiometa/eslint-config": "^2.1.3",
+    "eslint": "^7.22.0",
+    "prettier": "^2.2.1"
   },
   "scripts": {
     "test": "eslint src/",
