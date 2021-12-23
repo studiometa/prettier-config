@@ -1,0 +1,87 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - '*.*.*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org/
+
+      - run: npm i
+
+      - run: |
+          VERSION=${GITHUB_REF/refs\/tags\//}
+          TAG='latest'
+          if [[ $VERSION =~ 'alpha' || $VERSION =~ 'beta' ]]; then
+            TAG='next'
+          fi
+          npm publish --tag $TAG
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+
+      # @see https://github.com/actions/create-release/issues/38#issuecomment-715327220
+      # @see https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-commands-for-github-actions#environment-files
+      - name: Prepare the changelog from the tag message
+        id: prepare_changelog
+        run: |
+          echo "Setting release version to $GITHUB_REF_NAME"
+
+          PRERELEASE=false
+          # Check release type
+          if [[ $GITHUB_REF_NAME =~ 'alpha' || $GITHUB_REF_NAME =~ 'beta' ]]; then
+            echo "This is a prerelease."
+            PRERELEASE=true
+          fi
+          echo "is_prerelease=$PRERELEASE" >> $GITHUB_ENV
+
+          echo "Preparing changelog..."
+          CHANGELOG=$(git show $GITHUB_REF --no-patch --format='' | tail -n+6)
+
+          # Set markdown titles
+          CHANGELOG=${CHANGELOG/Added/## Added}
+          CHANGELOG=${CHANGELOG/Fixed/## Fixed}
+          CHANGELOG=${CHANGELOG/Changed/## Changed}
+          CHANGELOG=${CHANGELOG/Removed/## Removed}
+          CHANGELOG=${CHANGELOG/Deprecated/## Deprecated}
+          CHANGELOG=${CHANGELOG/Security/## Security}
+
+          # Remove PGP signature
+          CHANGELOG="${CHANGELOG%-----BEGIN*}"
+
+          echo "-----------------------------------------"
+          echo "$CHANGELOG"
+
+          # Change linebreaks and other special characters
+          CHANGELOG="${CHANGELOG//'%'/%25}"
+          CHANGELOG="${CHANGELOG//$'\n'/%0A}"
+          CHANGELOG="${CHANGELOG//$'\r'/%0D}"
+
+          echo "-----------------------------------------"
+          echo "Changelog prepared:"
+          echo $CHANGELOG
+
+          echo 'changelog<<EOF' >> $GITHUB_ENV
+          echo $CHANGELOG >> $GITHUB_ENV
+          echo 'EOF' >> $GITHUB_ENV
+
+      # @see https://github.com/actions/create-release
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: v${{ github.ref_name }}
+          body: ${{ env.changelog }}
+          draft: false
+          prerelease: ${{ env.is_prerelease }}
