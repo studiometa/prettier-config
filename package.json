@@ -1,6 +1,6 @@
 {
   "name": "@studiometa/prettier-config",
-  "version": "2.1.1",
+  "version": "3.0.0",
   "description": "Simple Prettier configuration",
   "publishConfig": {
     "access": "public"
