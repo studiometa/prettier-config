@@ -5,6 +5,7 @@ module.exports = {
   singleQuote: true,
   tabWidth: 2,
   trailingComma: 'es5',
+  bracketSameLine: true,
   useTabs: false,
   vueIndentScriptAndStyle: true,
   htmlWhitespaceSensitivity: 'ignore',
