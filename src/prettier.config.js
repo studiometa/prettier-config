@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   bracketSpacing: true,
   printWidth: 100,
   semi: true,
@@ -11,4 +11,5 @@ module.exports = {
   htmlWhitespaceSensitivity: 'ignore',
   twigPrintWidth: 100,
   twigMultiTags: ['html_element,end_html_element', 'with,endwith'],
+  plugins: [import.meta.resolve('@afshinhaghighat/prettier-plugin-twig-melody')],
 };
