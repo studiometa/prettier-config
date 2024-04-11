@@ -11,4 +11,5 @@ export default {
   htmlWhitespaceSensitivity: 'ignore',
   twigPrintWidth: 100,
   twigMultiTags: ['html_element,end_html_element', 'with,endwith'],
+  plugins: [import.meta.resolve('@afshinhaghighat/prettier-plugin-twig-melody')],
 };
