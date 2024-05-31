@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file. The format 
 
 ## [Unreleased]
 
+## [v4.1.0](https://github.com/studiometa/js-toolkit/compare/4.0.0..4.1.0) (2023-05-31)
+
+### Added
+
+- Add support for Liquid ([#30](https://github.com/studiometa/prettier-config/pull/30))
+
+### Changed
+
+- Improve language specific configuration for Twig and Liquid ([#30](https://github.com/studiometa/prettier-config/pull/30), [8f7cd4d](https://github.com/studiometa/prettier-config/commit/8f7cd4d))
+
 ## [v4.0.0](https://github.com/studiometa/js-toolkit/compare/3.0.0..4.0.0) (2023-04-11)
 
 ### Changed

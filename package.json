@@ -1,14 +1,16 @@
 {
   "name": "@studiometa/prettier-config",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "Simple Prettier configuration",
   "type": "module",
   "publishConfig": {
     "access": "public"
   },
-  "main": "src/prettier.config.js",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
   "dependencies": {
-    "@afshinhaghighat/prettier-plugin-twig-melody": "^2.0.2"
+    "@afshinhaghighat/prettier-plugin-twig-melody": "^2.0.2",
+    "@shopify/prettier-plugin-liquid": "1.5.0"
   },
   "peerDependencies": {
     "prettier": ">=3.0.0"
