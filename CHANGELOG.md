@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file. The format 
 
 ## [Unreleased]
 
+## [v4.1.0](https://github.com/studiometa/js-toolkit/compare/4.0.0..4.1.0) (2023-05-31)
+
 ### Added
 
 - Add support for Liquid ([#30](https://github.com/studiometa/prettier-config/pull/30))
