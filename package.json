@@ -16,9 +16,9 @@
     "prettier": ">=3.0.0"
   },
   "devDependencies": {
-    "@studiometa/eslint-config": "^2.1.3",
-    "eslint": "^7.22.0",
-    "prettier": "^3.0.0"
+    "@studiometa/eslint-config": "2.1.3",
+    "eslint": "7.22.0",
+    "prettier": "3.2.5"
   },
   "scripts": {
     "test": "prettier tests/"
