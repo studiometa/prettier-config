@@ -10,7 +10,7 @@
   "types": "src/index.d.ts",
   "dependencies": {
     "@afshinhaghighat/prettier-plugin-twig-melody": "^2.0.2",
-    "@shopify/prettier-plugin-liquid": "1.5.0"
+    "@shopify/prettier-plugin-liquid": "1.9.3"
   },
   "peerDependencies": {
     "prettier": ">=3.0.0"
