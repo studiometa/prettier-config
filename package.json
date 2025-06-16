@@ -15,6 +15,7 @@
   "dependencies": {
     "@afshinhaghighat/prettier-plugin-twig-melody": "^2.0.2",
     "@shopify/prettier-plugin-liquid": "1.9.3",
+    "@studiometa/prettier-formatter-gitlab": "^2.1.1",
     "prettier": "^3.5.3"
   },
   "devDependencies": {
