@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file. The format 
 
 ## [Unreleased]
 
+## [v4.2.0](https://github.com/studiometa/js-toolkit/compare/4.1.0..4.2.0) (2025-06-16)
+
+### Changed
+
+- Move prettier to direct dependencies ([1ad6b6b](https://github.com/studiometa/prettier-config/commit/1ad6b6b))
+- Migrate to TypeScript ([fb738a9](https://github.com/studiometa/prettier-config/commit/fb738a9))
+- Update dependencies ([b65f140](https://github.com/studiometa/prettier-config/commit/b65f140))
+- Update Node version ([cc40d9a](https://github.com/studiometa/prettier-config/commit/cc40d9a))
+
 ## [v4.1.0](https://github.com/studiometa/js-toolkit/compare/4.0.0..4.1.0) (2023-05-31)
 
 ### Added
