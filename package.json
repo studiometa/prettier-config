@@ -25,7 +25,7 @@
   "scripts": {
     "pretest": "npm run build:pkg",
     "test": "prettier tests/",
-    "prelint": "npm run build:pkg",
+    "prelint:scripts": "npm run build:pkg",
     "lint": "npm run lint:scripts && npm run lint:types",
     "lint:scripts": "eslint src/ --cache",
     "lint:types": "tsc --build tsconfig.lint.json",
