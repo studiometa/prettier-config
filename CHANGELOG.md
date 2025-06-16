@@ -6,6 +6,10 @@ All notable changes to this project will be documented in this file. The format 
 
 ## [v4.2.0](https://github.com/studiometa/js-toolkit/compare/4.1.0..4.2.0) (2025-06-16)
 
+### Added
+
+- Add `@studiometa/prettier-formatter-gitlab` as a direct dependency ([7f13d57](https://github.com/studiometa/prettier-config/commit/7f13d57))
+
 ### Changed
 
 - Move prettier to direct dependencies ([1ad6b6b](https://github.com/studiometa/prettier-config/commit/1ad6b6b))
