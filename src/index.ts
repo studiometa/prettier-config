@@ -1,4 +1,5 @@
-/** @type {import('prettier').Config} */
+import type { Config } from 'prettier';
+
 export default {
   bracketSpacing: true,
   printWidth: 100,
@@ -24,7 +25,7 @@ export default {
       options: {
         singleQuote: false,
         plugins: [import.meta.resolve('@shopify/prettier-plugin-liquid')],
-      }
-    }
+      },
+    },
   ],
-};
+} satisfies Config;
