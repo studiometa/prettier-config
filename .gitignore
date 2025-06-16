@@ -9,3 +9,6 @@ npm-debug.log
 yarn.lock
 .deploys
 *.ini
+/dist/
+/.eslintcache
+/tsconfig.lint.tsbuildinfo
