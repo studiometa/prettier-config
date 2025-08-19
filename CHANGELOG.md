@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file. The format 
 
 ## [Unreleased]
 
+## [v4.3.0](https://github.com/studiometa/js-toolkit/compare/4.2.0..4.3.0) (2025-08-19)
+
 ### Added
 
 - Add support for Twig apply tag ([41ec1d4](https://github.com/studiometa/prettier-config/commit/41ec1d4))
