@@ -1,4 +1,4 @@
-# Prettier configuration
+# @studiometa/prettier-config
 
 [![NPM Version](https://img.shields.io/npm/v/@studiometa/prettier-config.svg?style=flat&colorB=3e63dd&colorA=414853)](https://www.npmjs.com/package/@studiometa/prettier-config/)
 [![Downloads](https://img.shields.io/npm/dm/@studiometa/prettier-config?style=flat&colorB=3e63dd&colorA=414853)](https://www.npmjs.com/package/@studiometa/prettier-config/)
