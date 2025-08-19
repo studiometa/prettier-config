@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file. The format 
 
 ## [Unreleased]
 
+### Added
+
+- Add support for Twig apply tag ([41ec1d4](https://github.com/studiometa/prettier-config/commit/41ec1d4))
+
+### Changed
+
+- Update dependencies ([e080554](https://github.com/studiometa/prettier-config/commit/e080554))
+
 ## [v4.2.0](https://github.com/studiometa/js-toolkit/compare/4.1.0..4.2.0) (2025-06-16)
 
 ### Added
