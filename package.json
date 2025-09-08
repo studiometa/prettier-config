@@ -13,7 +13,7 @@
     "README.md"
   ],
   "dependencies": {
-    "@shopify/prettier-plugin-liquid": "1.9.4",
+    "@shopify/prettier-plugin-liquid": "1.10.0",
     "@studiometa/prettier-formatter-gitlab": "^2.1.1",
     "@zackad/prettier-plugin-twig": "^0.16.0",
     "prettier": "^3.6.2"
