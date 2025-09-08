@@ -15,9 +15,8 @@ export default {
     {
       files: '**/*.twig',
       options: {
-        twigPrintWidth: 100,
         twigMultiTags: ['html_element,end_html_element', 'with,endwith', 'apply,endapply'],
-        plugins: [import.meta.resolve('@afshinhaghighat/prettier-plugin-twig-melody')],
+        plugins: [import.meta.resolve('@zackad/prettier-plugin-twig')],
       },
     },
     {

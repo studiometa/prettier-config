@@ -4,4 +4,7 @@
   {% html_element 'div' with { class: 'block' } %}
     Hello World
   {% end_html_element %}
+
+  {{ someArray
+    |filter(item => item.amount > 5) }}
 {% endblock %}
