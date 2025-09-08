@@ -1,6 +1,6 @@
 {
   "name": "@studiometa/prettier-config",
-  "version": "4.3.0",
+  "version": "4.4.0",
   "description": "Prettier configuration",
   "type": "module",
   "publishConfig": {
@@ -13,19 +13,21 @@
     "README.md"
   ],
   "dependencies": {
-    "@afshinhaghighat/prettier-plugin-twig-melody": "^2.0.2",
-    "@shopify/prettier-plugin-liquid": "1.9.3",
+    "@shopify/prettier-plugin-liquid": "1.10.0",
     "@studiometa/prettier-formatter-gitlab": "^2.1.1",
+    "@zackad/prettier-plugin-twig": "^0.16.0",
     "prettier": "^3.6.2"
   },
   "devDependencies": {
     "@studiometa/eslint-config": "4.3.1",
     "esbuild": "0.25.9",
-    "typescript": "5.9.2"
+    "typescript": "5.9.2",
+    "vitest": "^4.0.0-beta.10"
   },
   "scripts": {
     "pretest": "npm run build:pkg",
-    "test": "prettier tests/",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "prelint:scripts": "npm run build:pkg",
     "lint": "npm run lint:scripts && npm run lint:types",
     "lint:scripts": "eslint src/ --cache",

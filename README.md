@@ -1,8 +1,9 @@
-# Prettier configuration
+# @studiometa/prettier-config
 
-[![NPM Version](https://img.shields.io/npm/v/@studiometa/prettier-config.svg?style=flat-square)](https://www.npmjs.com/package/@studiometa/prettier-config)
-[![Dependency Status](https://img.shields.io/david/studiometa/prettier-config.svg?label=deps&style=flat-square)](https://david-dm.org/studiometa/prettier-config)
-[![devDependency Status](https://img.shields.io/david/dev/studiometa/prettier-config.svg?label=devDeps&style=flat-square)](https://david-dm.org/studiometa/prettier-config?type=dev)
+[![NPM Version](https://img.shields.io/npm/v/@studiometa/prettier-config.svg?style=flat&colorB=3e63dd&colorA=414853)](https://www.npmjs.com/package/@studiometa/prettier-config/)
+[![Downloads](https://img.shields.io/npm/dm/@studiometa/prettier-config?style=flat&colorB=3e63dd&colorA=414853)](https://www.npmjs.com/package/@studiometa/prettier-config/)
+[![Size](https://img.shields.io/bundlephobia/minzip/@studiometa/prettier-config?style=flat&colorB=3e63dd&colorA=414853&label=size)](https://bundlephobia.com/package/@studiometa/prettier-config)
+[![Dependency Status](https://img.shields.io/librariesio/release/npm/@studiometa/prettier-config?style=flat&colorB=3e63dd&colorA=414853)](https://david-dm.org/studiometa/prettier-config)
 
 > Studio Meta's favorite Prettier configuration to be used across projects.
 

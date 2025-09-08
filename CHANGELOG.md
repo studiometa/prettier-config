@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file. The format 
 
 ## [Unreleased]
 
+## [v4.4.0](https://github.com/studiometa/js-toolkit/compare/4.3.0..4.4.0) (2025-09-08)
+
+### Added
+
+- **Twig:** add support for arrow functions in filters ([#45](https://github.com/studiometa/prettier-config/pull/45), [c39eb77](https://github.com/studiometa/prettier-config/commit/c39eb77))
+
+### Changed
+
+- Update @shopify/prettier-plugin-liquid v1.9.4 → v1.10.0 ([#46](https://github.com/studiometa/prettier-config/pull/46), [5bd2373](https://github.com/studiometa/prettier-config/commit/5bd2373))
+
 ## [v4.3.0](https://github.com/studiometa/js-toolkit/compare/4.2.0..4.3.0) (2025-08-19)
 
 ### Added
