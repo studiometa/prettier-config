@@ -1,0 +1,19 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`The Prettier config > should formate Twig templates 1`] = `
+"{% extends '@layouts/base.twig' %}
+
+{% block body %}
+  {% html_element 'div'
+    with
+    {
+      class: 'block'
+    }
+  %}
+    Hello World
+  {% end_html_element %}
+
+  {{ someArray|filter(item => item.amount > 5) }}
+{% endblock %}
+"
+`;

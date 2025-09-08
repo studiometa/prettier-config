@@ -21,11 +21,13 @@
   "devDependencies": {
     "@studiometa/eslint-config": "4.3.1",
     "esbuild": "0.25.9",
-    "typescript": "5.9.2"
+    "typescript": "5.9.2",
+    "vitest": "^4.0.0-beta.10"
   },
   "scripts": {
     "pretest": "npm run build:pkg",
-    "test": "prettier tests/",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "prelint:scripts": "npm run build:pkg",
     "lint": "npm run lint:scripts && npm run lint:types",
     "lint:scripts": "eslint src/ --cache",
