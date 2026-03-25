@@ -25,7 +25,7 @@ module.exports = require('@studiometa/prettier-config');
 
 ## Contributing
 
-This project uses [Git Flow](https://github.com/petervanderdoes/gitflow-avh) as a branching model, new feature will be added by pull-requests of `feature/` branches against `develop`. 
+This project uses a trunk-based development model, new features are added by pull-requests against `main`.
 
 The JS files are linted with [ESLint](https://eslint.org/) and [Prettier](https://prettier.io). You can check for linting errors before your commits by running the following scripts with Yarn:
 
